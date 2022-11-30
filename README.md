@@ -2,6 +2,7 @@
 ## 1. 설치 및 실행
 ```bash
 $> git clone https://github.com/shlee9412/igloo-react.git
+$> cd igloo-react
 $> npm install
 $> npm start
 ```
