@@ -1,0 +1,28 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+
+const indexList = [
+  { id: 1, title: '카운터 예제', path: '/counter' },
+  { id: 2, title: '~~~', path: '/~~~' },
+];
+
+const IndexList = () => {
+  return (
+    <div>
+      <h1>목차</h1>
+      <ol>
+        {indexList.map(d => {
+          return (
+            <li key={d.id}>
+              <Link to={d.path}>
+                {d.title}
+              </Link>
+            </li>
+          );
+        })}
+      </ol>
+    </div>
+  );
+};
+
+export default IndexList;
