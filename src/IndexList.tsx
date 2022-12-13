@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const indexList = [
   { id: 1, title: '카운터 예제', path: '/counter' },
-  { id: 2, title: '~~~', path: '/~~~' },
+  { id: 2, title: '인터벌 예제', path: '/timeInterval' },
 ];
 
 const IndexList = () => {

@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Counter from './Counter';
 import Header from './Header';
 import IndexList from './IndexList';
+import TimeInterval from './timeInterval';
 
 const RouteContainer = () => {
   return (
@@ -10,6 +11,7 @@ const RouteContainer = () => {
       <Routes>
         <Route path="/" element={<IndexList />} />
         <Route path="/counter" element={<Counter />} />
+        <Route path="/timeInterval" element={<TimeInterval />} />
       </Routes>
     </BrowserRouter>
   );
