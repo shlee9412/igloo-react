@@ -14,4 +14,4 @@ $> npm start
 
 <br />
 
-**※ 백엔드 API 문서 : http://localhost:8080/api/docs**
+**※ 백엔드 API 문서 : "npm start" 실행 후 http://localhost:8080/api/docs 로 접속**
