@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Counter from './Counter';
 import Header from './Header';
 import IndexList from './IndexList';
-import TimeInterval from './timeInterval';
+import TimeInterval from './TimeInterval';
 
 const RouteContainer = () => {
   return (

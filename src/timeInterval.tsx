@@ -26,22 +26,26 @@ const TimeInterval = () => {
       };
 
     return (
-        <div>
-            <input
-                type="text"
-                value={inputText}
-                onChange={(e) => {
-                    setInputText(e.target.value)    
-                }}
-            />
-            <input
-                type="number"
-                ref={numberElement}
-            />
-            <button
-                onClick={focusInput}
-            >focus</button>
-        </div>
+        <React.Fragment>
+            <div>
+                <input
+                    type="text"
+                    value={inputText}
+                    onChange={(e) => {
+                        setInputText(e.target.value)    
+                    }}
+                />
+            </div>
+            <div>
+                <input
+                    type="number"
+                    ref={numberElement}
+                />
+                <button
+                    onClick={focusInput}
+                >focus</button>
+            </div>
+        </>
     );
 };
 
