@@ -23,16 +23,16 @@ const TimeInterval = () => {
 
     const focusInput = () => {
         numberElement.current.focus();
-      };
+    };
 
     return (
-        <React.Fragment>
+        <>
             <div>
                 <input
                     type="text"
                     value={inputText}
                     onChange={(e) => {
-                        setInputText(e.target.value)    
+                        setInputText(e.target.value)
                     }}
                 />
             </div>
