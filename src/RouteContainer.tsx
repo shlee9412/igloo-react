@@ -1,9 +1,10 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Contacts from './Contacts';
-import Counter from './Counter';
-import Header from './Header';
-import IndexList from './IndexList';
-import TimeInterval from './TimeInterval';
+import Header from './components/Header';
+import Contacts from './pages/Contacts';
+import Counter from './pages/Counter';
+import IndexList from './pages/IndexList';
+import SignUp from './pages/SignUp';
+import TimeInterval from './pages/TimeInterval';
 
 const RouteContainer = () => {
   return (
@@ -14,6 +15,7 @@ const RouteContainer = () => {
         <Route path="/counter" element={<Counter />} />
         <Route path="/timeInterval" element={<TimeInterval />} />
         <Route path="/contacts" element={<Contacts />} />
+        <Route path="/signup" element={<SignUp />} />
       </Routes>
     </BrowserRouter>
   );

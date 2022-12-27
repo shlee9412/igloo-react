@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import ButtonGroup from './ButtonGroup';
-import Num from './Num';
+import ButtonGroup from '../components/ButtonGroup';
+import Num from '../components/Num';
 
 const Counter = () => {
   const [num, setNum] = useState(100);
