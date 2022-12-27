@@ -1,4 +1,27 @@
 import React, { useState, useEffect, useRef, useLayoutEffect } from 'react';
+import styled from 'styled-components';
+
+const DivContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+const Div1 = styled.div`
+`;
+
+const Div2 = styled.div`
+`;
+
+const Div3 = styled.div`
+`;
+
+const Input = styled.input<{ inputColor: string }>`
+  width: 100px;
+  color: ${props => props.inputColor};
+`;
+
+
 
 const TimeInterval = () => {
     const [count, setCount] = useState(0);
@@ -26,26 +49,30 @@ const TimeInterval = () => {
     };
 
     return (
-        <>
-            <div>
-                <input
+        <DivContainer>
+            <Div1>
+                <Input
                     type="text"
                     value={inputText}
                     onChange={(e) => {
                         setInputText(e.target.value)
                     }}
+                    inputColor='red'
                 />
-            </div>
-            <div>
-                <input
+            </Div1>
+            <Div2>
+                <Input
                     type="number"
                     ref={numberElement}
+                    inputColor='green'
                 />
-                <button
-                    onClick={focusInput}
-                >focus</button>
-            </div>
-        </>
+            </Div2>
+            <Div3>
+              <button
+                  onClick={focusInput}
+              >focus</button>
+            </Div3>
+        </DivContainer>
     );
 };
 
