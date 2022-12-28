@@ -1,4 +1,11 @@
-import React, { useCallback, useMemo, useState } from 'react';
+import React, { useCallback, useMemo, useState, useContext } from 'react';
+import { ThemeContext } from '../App';
+import styled from 'styled-components';
+
+const DivContainer = styled.div`
+  background-color: ${props => props.theme === 'light' ? 'white' : 'black'};
+  color: ${props => props.theme === 'light' ? 'black' : 'white'};
+`;
 
 interface FormInputParams {
   key?: any
@@ -9,6 +16,8 @@ interface FormInputParams {
 }
 
 const SignUp = () => {
+  const context = useContext(ThemeContext);
+  
   const [userId, setUserId] = useState('');
   const [password, setPassword] = useState('');
   const [passwordConfirm, setPasswordConfirm] = useState('');
@@ -78,7 +87,9 @@ const SignUp = () => {
   }, [userId, password, passwordConfirm, name, birth]);
 
   return (
-    <div>
+    <DivContainer
+      theme={context}
+    >
       <h1>회원가입</h1>
       <form onSubmit={register}>
         <table>
@@ -123,7 +134,7 @@ const SignUp = () => {
           </tbody>
         </table>
       </form>
-    </div>
+    </DivContainer>
   );
 };
 
