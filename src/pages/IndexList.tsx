@@ -13,12 +13,13 @@ const indexList = [
   { id: 1, title: '카운터 예제', path: '/counter' },
   { id: 2, title: '인터벌 예제', path: '/timeInterval' },
   { id: 3, title: '연락처 예제', path: '/contacts' },
-  { id: 4, title: '회원가입 예제', path: '/sigsnup' },
+  { id: 4, title: '회원가입 예제', path: '/signup' },
 ];
 
 const IndexList = () => {
 
   const context = useContext(ThemeContext);
+
 
   return (
     <DivContainer
