@@ -7,6 +7,7 @@ import ReduxCounter1 from './pages/ReduxCounter1';
 import ReduxCounter2 from './pages/ReduxCounter2';
 import SignUp from './pages/SignUp';
 import TimeInterval from './pages/TimeInterval';
+import User from './pages/User';
 
 const RouteContainer = () => {
   return (
@@ -20,6 +21,7 @@ const RouteContainer = () => {
         <Route path="/signup" element={<SignUp />} />
         <Route path="/redux-counter1" element={<ReduxCounter1 />} />
         <Route path="/redux-counter2" element={<ReduxCounter2 />} />
+        <Route path="/user" element={<User />} />
       </Routes>
     </BrowserRouter>
   );

@@ -15,7 +15,8 @@ const indexList = [
   { id: 3, title: '연락처 예제', path: '/contacts' },
   { id: 4, title: '회원가입 예제', path: '/signup' },
   { id: 5, title: '리덕스 카운터 예제 1', path: '/redux-counter1' },
-  { id: 6, title: '리덕스 카운터 예제 2', path: '/redux-counter2' }
+  { id: 6, title: '리덕스 카운터 예제 2', path: '/redux-counter2' },
+  { id: 7, title: '사용자 정보(Custom Hook)', path: '/user' }
 ];
 
 const IndexList = () => {

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
-interface Contact {
+export interface Contact {
   id: number
   name: string
   phone: string
